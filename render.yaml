@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: polymarket-bot
+    env: python
+    buildCommand: pip install requests
+    startCommand: python polymarket_bot.py
